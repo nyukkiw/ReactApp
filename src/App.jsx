@@ -1,10 +1,9 @@
-import Article from "./components/Article"
 import './App.css'
-
+import Home from "./pages/index"
 function App() {
   return (
     <>
-      <Article />
+      <Home/>
     </>
   )
 }

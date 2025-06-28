@@ -1,20 +1,9 @@
-function Article (){
-    const name = "Valentino";
-    const titles = ["Tutorial with react js", "Tutorial with next js", "Tutorial with node Js"]
-    
+function Article (props){
+   
     return (
     <>
-    <div>{name}</div>   
-
-
-    <div>{titles.map((title)=>{
-        return (
-            <>
-                <div>{title}</div>
-                 <div>{title}</div>
-            </>
-        )
-    })}</div>    
+    <h3>{props.title}</h3> 
+    <small>Date : {props.date}, tags: {props.tags.join(", ")}</small>    
     </>
 
 )
