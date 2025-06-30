@@ -2,17 +2,24 @@
 {
     "title": "tutorial reactJS",
     "tags": ["react", "frontend"],
-    "date": "2025-06-28"
+    "date": "2025-06-28",
+    "isNew": true
+    
+    
 },
+
 {
     "title": "meningkatkan performa reactJS",
     "tags": ["react", "frontend"],
-    "date": "2025-06-29"
+    "date": "2025-06-29",
+    "isNew": false
 },
 {
     "title": "tutorial chakra-ui di reactJS",
     "tags": ["react", "css"],
-    "date": "2025-06-30"
+    "date": "2025-06-30",
+    "isNew": false
+
 }
 
 ]
