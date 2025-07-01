@@ -6,8 +6,7 @@ import Search from "../components/Search";
 function Homepage(){
     const [posts, setPosts]=useState(postsData)
     const [totalPosts, setTotalPosts]=useState(0);
-    const [externalPosts, setExternalPosts] = useState([])
-
+    
     const onSearchChange=(value)=>{
         const filteredPosts = postsData.filter(item=>item.title.includes(value));
         setPosts(filteredPosts);
@@ -24,13 +23,6 @@ function Homepage(){
        
     }, []);
 
-    useEffect(() => {
-        console.log("ada post baru")
-
-    }, [posts])
-
-    
-
     return(
         <>
             <h1>Simple blog</h1>
@@ -42,9 +34,6 @@ function Homepage(){
             <hr />
             <h2>External posts</h2>
 
-            {externalPosts.map((item, index) => (
-              <div key={index}>-{item.title}</div>
-            ))}
         </>
     );
 }
